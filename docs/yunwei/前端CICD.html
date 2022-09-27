@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端自动化CI/CD | 宇童笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href=".public/favicon.ico">
+    <script src="/blog/assets/js/bodyClick.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.6fd066e2.css" as="style"><link rel="preload" href="/blog/assets/js/app.d8bd66ab.js" as="script"><link rel="preload" href="/blog/assets/js/3.3b42f3e9.js" as="script"><link rel="preload" href="/blog/assets/js/1.9c7ae58f.js" as="script"><link rel="preload" href="/blog/assets/js/132.c119b50c.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.a1850394.js"><link rel="prefetch" href="/blog/assets/js/100.dfe41b93.js"><link rel="prefetch" href="/blog/assets/js/101.8bfe6334.js"><link rel="prefetch" href="/blog/assets/js/102.abdb4a14.js"><link rel="prefetch" href="/blog/assets/js/103.b07180f0.js"><link rel="prefetch" href="/blog/assets/js/104.faae6e96.js"><link rel="prefetch" href="/blog/assets/js/105.6dccc84d.js"><link rel="prefetch" href="/blog/assets/js/106.a5c36c0a.js"><link rel="prefetch" href="/blog/assets/js/107.cf237a13.js"><link rel="prefetch" href="/blog/assets/js/108.766d468a.js"><link rel="prefetch" href="/blog/assets/js/109.a5ed7137.js"><link rel="prefetch" href="/blog/assets/js/11.48576071.js"><link rel="prefetch" href="/blog/assets/js/110.d66cfcc2.js"><link rel="prefetch" href="/blog/assets/js/111.1ce74167.js"><link rel="prefetch" href="/blog/assets/js/112.1678324b.js"><link rel="prefetch" href="/blog/assets/js/113.6df8b2eb.js"><link rel="prefetch" href="/blog/assets/js/114.8ac2fa98.js"><link rel="prefetch" href="/blog/assets/js/115.56f50038.js"><link rel="prefetch" href="/blog/assets/js/116.c9444f33.js"><link rel="prefetch" href="/blog/assets/js/117.e0f307fe.js"><link rel="prefetch" href="/blog/assets/js/118.44eb0c7f.js"><link rel="prefetch" href="/blog/assets/js/119.ac2e2477.js"><link rel="prefetch" href="/blog/assets/js/12.b920b7b4.js"><link rel="prefetch" href="/blog/assets/js/120.cbdac942.js"><link rel="prefetch" href="/blog/assets/js/121.1ab0e898.js"><link rel="prefetch" href="/blog/assets/js/122.091d1fe9.js"><link rel="prefetch" href="/blog/assets/js/123.3e27ce83.js"><link rel="prefetch" href="/blog/assets/js/124.2667d447.js"><link rel="prefetch" href="/blog/assets/js/125.05df2509.js"><link rel="prefetch" href="/blog/assets/js/126.a13fbb33.js"><link rel="prefetch" href="/blog/assets/js/127.79195406.js"><link rel="prefetch" href="/blog/assets/js/128.73e1866a.js"><link rel="prefetch" href="/blog/assets/js/129.df3fe8d4.js"><link rel="prefetch" href="/blog/assets/js/13.83b18bea.js"><link rel="prefetch" href="/blog/assets/js/130.eebc3033.js"><link rel="prefetch" href="/blog/assets/js/131.1ac55605.js"><link rel="prefetch" href="/blog/assets/js/133.0934eda0.js"><link rel="prefetch" href="/blog/assets/js/14.b9d21c6b.js"><link rel="prefetch" href="/blog/assets/js/15.82f7e931.js"><link rel="prefetch" href="/blog/assets/js/16.1caed934.js"><link rel="prefetch" href="/blog/assets/js/17.5a919296.js"><link rel="prefetch" href="/blog/assets/js/18.2ffbe71b.js"><link rel="prefetch" href="/blog/assets/js/19.109aca77.js"><link rel="prefetch" href="/blog/assets/js/20.6ac22399.js"><link rel="prefetch" href="/blog/assets/js/21.8ad133f8.js"><link rel="prefetch" href="/blog/assets/js/22.bcad0ff0.js"><link rel="prefetch" href="/blog/assets/js/23.7f254d39.js"><link rel="prefetch" href="/blog/assets/js/24.d3ac6e49.js"><link rel="prefetch" href="/blog/assets/js/25.318ee183.js"><link rel="prefetch" href="/blog/assets/js/26.6d4cf906.js"><link rel="prefetch" href="/blog/assets/js/27.961bbcd9.js"><link rel="prefetch" href="/blog/assets/js/28.e1806cfa.js"><link rel="prefetch" href="/blog/assets/js/29.2f6b804f.js"><link rel="prefetch" href="/blog/assets/js/30.b67e1b59.js"><link rel="prefetch" href="/blog/assets/js/31.3af4638f.js"><link rel="prefetch" href="/blog/assets/js/32.7f08f24d.js"><link rel="prefetch" href="/blog/assets/js/33.4381f52e.js"><link rel="prefetch" href="/blog/assets/js/34.f6ca54bc.js"><link rel="prefetch" href="/blog/assets/js/35.77956ae5.js"><link rel="prefetch" href="/blog/assets/js/36.51fdda55.js"><link rel="prefetch" href="/blog/assets/js/37.85e3e902.js"><link rel="prefetch" href="/blog/assets/js/38.c1cc369b.js"><link rel="prefetch" href="/blog/assets/js/39.4e1c2814.js"><link rel="prefetch" href="/blog/assets/js/4.7ce6da18.js"><link rel="prefetch" href="/blog/assets/js/40.aa41b86f.js"><link rel="prefetch" href="/blog/assets/js/41.64778b9e.js"><link rel="prefetch" href="/blog/assets/js/42.2d16fdca.js"><link rel="prefetch" href="/blog/assets/js/43.24ff934d.js"><link rel="prefetch" href="/blog/assets/js/44.0212e41c.js"><link rel="prefetch" href="/blog/assets/js/45.0bda2966.js"><link rel="prefetch" href="/blog/assets/js/46.b8b7472f.js"><link rel="prefetch" href="/blog/assets/js/47.9f279757.js"><link rel="prefetch" href="/blog/assets/js/48.8f25daba.js"><link rel="prefetch" href="/blog/assets/js/49.638f6525.js"><link rel="prefetch" href="/blog/assets/js/5.869676e8.js"><link rel="prefetch" href="/blog/assets/js/50.03d5b6b8.js"><link rel="prefetch" href="/blog/assets/js/51.43322a42.js"><link rel="prefetch" href="/blog/assets/js/52.777da065.js"><link rel="prefetch" href="/blog/assets/js/53.5cec034f.js"><link rel="prefetch" href="/blog/assets/js/54.8dae2afe.js"><link rel="prefetch" href="/blog/assets/js/55.696e804b.js"><link rel="prefetch" href="/blog/assets/js/56.25d7e595.js"><link rel="prefetch" href="/blog/assets/js/57.13a0059e.js"><link rel="prefetch" href="/blog/assets/js/58.6cb5def9.js"><link rel="prefetch" href="/blog/assets/js/59.0233bd20.js"><link rel="prefetch" href="/blog/assets/js/6.1b6a4fbf.js"><link rel="prefetch" href="/blog/assets/js/60.a9a61d78.js"><link rel="prefetch" href="/blog/assets/js/61.e80b57fc.js"><link rel="prefetch" href="/blog/assets/js/62.2f19d96a.js"><link rel="prefetch" href="/blog/assets/js/63.fc6a20a8.js"><link rel="prefetch" href="/blog/assets/js/64.89540868.js"><link rel="prefetch" href="/blog/assets/js/65.3502e49e.js"><link rel="prefetch" href="/blog/assets/js/66.faacd72c.js"><link rel="prefetch" href="/blog/assets/js/67.3489c24a.js"><link rel="prefetch" href="/blog/assets/js/68.add824ba.js"><link rel="prefetch" href="/blog/assets/js/69.9db15081.js"><link rel="prefetch" href="/blog/assets/js/7.03ebb5be.js"><link rel="prefetch" href="/blog/assets/js/70.10a17ee0.js"><link rel="prefetch" href="/blog/assets/js/71.4fea6995.js"><link rel="prefetch" href="/blog/assets/js/72.477ee6b4.js"><link rel="prefetch" href="/blog/assets/js/73.db0a092a.js"><link rel="prefetch" href="/blog/assets/js/74.643e818c.js"><link rel="prefetch" href="/blog/assets/js/75.fa956168.js"><link rel="prefetch" href="/blog/assets/js/76.ddb7a505.js"><link rel="prefetch" href="/blog/assets/js/77.8c0ef8e2.js"><link rel="prefetch" href="/blog/assets/js/78.4682924a.js"><link rel="prefetch" href="/blog/assets/js/79.bb812e1b.js"><link rel="prefetch" href="/blog/assets/js/8.04e61ed0.js"><link rel="prefetch" href="/blog/assets/js/80.05c3a61e.js"><link rel="prefetch" href="/blog/assets/js/81.8f414973.js"><link rel="prefetch" href="/blog/assets/js/82.b827925a.js"><link rel="prefetch" href="/blog/assets/js/83.067a770f.js"><link rel="prefetch" href="/blog/assets/js/84.fc3b34e6.js"><link rel="prefetch" href="/blog/assets/js/85.d5d2ba43.js"><link rel="prefetch" href="/blog/assets/js/86.0f2ee4cc.js"><link rel="prefetch" href="/blog/assets/js/87.4600aeb4.js"><link rel="prefetch" href="/blog/assets/js/88.4d4f488c.js"><link rel="prefetch" href="/blog/assets/js/89.8eec512b.js"><link rel="prefetch" href="/blog/assets/js/9.96456518.js"><link rel="prefetch" href="/blog/assets/js/90.18998f45.js"><link rel="prefetch" href="/blog/assets/js/91.12f2d2c7.js"><link rel="prefetch" href="/blog/assets/js/92.29f2bc27.js"><link rel="prefetch" href="/blog/assets/js/93.3cfc74dd.js"><link rel="prefetch" href="/blog/assets/js/94.d446e685.js"><link rel="prefetch" href="/blog/assets/js/95.682cb051.js"><link rel="prefetch" href="/blog/assets/js/96.e45162d4.js"><link rel="prefetch" href="/blog/assets/js/97.d5f0b1c6.js"><link rel="prefetch" href="/blog/assets/js/98.0c733b53.js"><link rel="prefetch" href="/blog/assets/js/99.1da11082.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.6fd066e2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7a6c954e><div data-v-7a6c954e><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-7a6c954e data-v-7a6c954e><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-548f7490 data-v-7a6c954e data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>宇童笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>xianghaifeng</span>
+            
+          <span data-v-548f7490>2018 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-7a6c954e><header class="navbar" data-v-7a6c954e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32fde3cb1777414fb992b56957ba3037~tplv-k3u1fbpfcp-watermark.image" alt="宇童笔记" class="logo"> <span class="site-name">宇童笔记</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      技术文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/jottings/mobile.html" class="nav-link"><i class="iconfont undefined"></i>
+  常用知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/虚拟dom和diff算法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/nuxt/introduction.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nuxt
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/yunwei/前端CICD.html" class="nav-link"><i class="iconfont undefined"></i>
+  运维
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/hfxiang93" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7a6c954e></div> <aside class="sidebar" data-v-7a6c954e><div class="personal-info-wrapper" data-v-ec2c9702 data-v-7a6c954e><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32fde3cb1777414fb992b56957ba3037~tplv-k3u1fbpfcp-watermark.image" alt="author-avatar" class="personal-img" data-v-ec2c9702> <h3 class="name" data-v-ec2c9702>
+    xianghaifeng
+  </h3> <div class="num" data-v-ec2c9702><div data-v-ec2c9702><h3 data-v-ec2c9702>55</h3> <h6 data-v-ec2c9702>文章</h6></div> <div data-v-ec2c9702><h3 data-v-ec2c9702>10</h3> <h6 data-v-ec2c9702>标签</h6></div></div> <hr data-v-ec2c9702></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      技术文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/jottings/mobile.html" class="nav-link"><i class="iconfont undefined"></i>
+  常用知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/虚拟dom和diff算法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/nuxt/introduction.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nuxt
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/yunwei/前端CICD.html" class="nav-link"><i class="iconfont undefined"></i>
+  运维
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/hfxiang93" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-548f7490 data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>前端自动化CI/CD</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>xianghaifeng</span>
+            
+          <span data-v-548f7490>2018 - </span>
+          2022
+        </a></span></div></div> <div data-v-7a6c954e><main class="page"><div class="page-title" style="display:none;"><h1>前端自动化CI/CD</h1> <div data-v-01d8a6a8><i class="iconfont reco-account" data-v-01d8a6a8><span data-v-01d8a6a8>xianghaifeng</span></i> <i class="iconfont reco-date" data-v-01d8a6a8><span data-v-01d8a6a8>2021-06-18</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="什么是ci-cd"><a href="#什么是ci-cd" class="header-anchor">#</a> 什么是CI/CD？</h2> <p>CICD 是 持续集成（Continuous Integration）和持续部署（Continuous Deployment）简称。指在开发过程中自动执行一系列脚本来减低开发引入 bug 的概率，在新代码从开发到部署的过程中，尽量减少人工的介入。</p> <h4 id="持续集成-ci"><a href="#持续集成-ci" class="header-anchor">#</a> 持续集成：CI</h4> <p>持续集成指在和向远程仓库 push 代码后，在这次提交合并入主分支前进行一系列测试，构建等流程。假设现在有个应用的代码存储在 gitlab 上，每天开发者都 push 很多次提交，针对每次 push，你可以创建一系列脚本进行自动测试，降低往应用里引入错误的概率。这就是持续集成，它可应用在包括开发分支在内的多个分支上。</p> <h4 id="持续部署-cd"><a href="#持续部署-cd" class="header-anchor">#</a> 持续部署：CD</h4> <p>持续部署在持续集成的基础上更进一步，指将推送指仓库默认分支的部署至产品环境。如果这部分需要手动触发，这就是一个持续交付（Continuous Delivery）环节。
+Gitlab 内置了 CICD 工具，不需要使用第三方工具，所以我们使用gitlab-ci以及gitlab-runner来完成我们的前端自动化构建部署</p> <h2 id="实现原理"><a href="#实现原理" class="header-anchor">#</a> 实现原理</h2> <p>前端发布流程基于gitlab-ci以及gitlab-runner，runner运行环境目前为docker，保证项目之间的开发版本不会有冲突，打包过后的前端包文件，通过<strong>rsync</strong>同步到静态资源文件中，通过监听master（生产环境）dev（开发环境）变动自动执行发布流程。</p> <h2 id="流程图"><a href="#流程图" class="header-anchor">#</a> 流程图</h2> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf006e8565a5~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="img"></p> <h2 id="实现步骤"><a href="#实现步骤" class="header-anchor">#</a> 实现步骤</h2> <p>1.首先用docker+nginx部署项目
+2.在gitlab新建的项目的CI/CD配置中填写需要发布到服务器的相关信息
+3.将你所需要发布的项目下新建一个.gitlab-ci.yml文件，让gitlab去执行自动化流程
+4.打包构建，提交代码，触发钩子执行自动化构建发布</p> <h3 id="_1-首先用docker-nginx部署项目"><a href="#_1-首先用docker-nginx部署项目" class="header-anchor">#</a> 1.首先用docker+nginx部署项目</h3> <p>docker下配置nginx部署vue项目步骤：
+1.docker pull nginx 下载nginx
+2.在/data /nginx（这里的/data /nginx就是服务器上前端静态资源的文件夹）路径下创建html，conf，conf.d三个文件夹，html下放npm run build打包后的静态文件
+3.conf下放nginx.conf,conf.d下放default.conf，nginx.conf和default.conf需要自己配置
+下面是nginx 模板文件 可以自己根据需要修改
+nginx default.conf配置：</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code>server <span class="token punctuation">{</span>
+  listen       <span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  localhost<span class="token punctuation">;</span>
+
+  <span class="token comment">#charset koi8-r;</span>
+  <span class="token comment">#access_log  /var/log/nginx/host.access.log  main;</span>
+
+  location / <span class="token punctuation">{</span>
+    root   /usr/share/nginx/html<span class="token punctuation">;</span>
+    index  index.html index.htm<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>nginx nginx.conf配置：</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code>user  nginx<span class="token punctuation">;</span>
+worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>
+error_log  /var/log/nginx/error.log warn<span class="token punctuation">;</span>
+pid        /var/run/nginx.pid<span class="token punctuation">;</span>
+events <span class="token punctuation">{</span>
+  worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+http <span class="token punctuation">{</span>
+  include       /etc/nginx/mime.types<span class="token punctuation">;</span>
+  default_type  application/octet-stream<span class="token punctuation">;</span>
+
+  log_format  main  <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+  <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+  <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+
+  access_log  /var/log/nginx/access.log  main<span class="token punctuation">;</span>
+
+  sendfile        on<span class="token punctuation">;</span>
+  <span class="token comment">#tcp_nopush     on;</span>
+
+  keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span>
+        <span class="token function">gzip</span> on<span class="token punctuation">;</span>
+        gzip_disable <span class="token string">&quot;msie6&quot;</span><span class="token punctuation">;</span>
+        gzip_vary on<span class="token punctuation">;</span>
+        gzip_proxied any<span class="token punctuation">;</span>
+        gzip_comp_level <span class="token number">1</span><span class="token punctuation">;</span>
+        gzip_buffers <span class="token number">16</span> 8k<span class="token punctuation">;</span>
+        gzip_http_version <span class="token number">1.0</span><span class="token punctuation">;</span>
+        gzip_min_length <span class="token number">256</span><span class="token punctuation">;</span>
+        gzip_types text/plain text/css
+                   application/json application/x-javascript text/xml
+                   application/xml application/xml+rss text/javascript application/javascript
+                   application/vnd.ms-fontobject application/x-font-ttf font/opentype 				    image/svg+xml image/x-icon
+                   image/jpeg image/gif image/png<span class="token punctuation">;</span>
+
+
+  include /etc/nginx/conf.d/*.conf<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><p>4.所有文件创建好之后，执行</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">--name</span> *容器名称*
+<span class="token parameter variable">-p</span> <span class="token number">8088</span>:80 <span class="token parameter variable">-v</span> /data/nginx/html:/usr/share/nginx/html <span class="token parameter variable">-v</span>
+/data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf <span class="token parameter variable">-v</span>
+/data/nginx/log:/var/log/nginx <span class="token parameter variable">-d</span> nginx:1.13（镜像名称）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>常用docker指令操作：
+--name命名容器，
+-p映射端口比如8088:80，
+-v映射当前文件夹到镜像中的文件夹,
+-d后台运行容器，
+docker ps -a 查看容器，
+docker images -a 查看所有镜像，
+docker rm 容器id 删除容器，
+docker rmi 镜像id 删除镜像，
+docker start 容器id 运行容器，
+docker stop 容器id 停止容器</p> <p><strong>到这一步，就先完成了docker+nginx部署前端项目了，接下来是配置自动化构建发布</strong></p> <h3 id="_2-在gitlab新建的项目的ci-cd配置中填写需要发布到服务器的相关信息"><a href="#_2-在gitlab新建的项目的ci-cd配置中填写需要发布到服务器的相关信息" class="header-anchor">#</a> 2.在gitlab新建的项目的CI/CD配置中填写需要发布到服务器的相关信息</h3> <h4 id="_2-1gitlab上项目中ci-cd中的variables变量配置-用在-yml里的-防止代码中泄露服务器信息"><a href="#_2-1gitlab上项目中ci-cd中的variables变量配置-用在-yml里的-防止代码中泄露服务器信息" class="header-anchor">#</a> 2.1Gitlab上项目中CI/CD中的variables变量配置（用在.yml里的，防止代码中泄露服务器信息）</h4> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcfea555c7278~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="img"></p> <h4 id="_2-2接下来在服务器上操作-配置免密登录"><a href="#_2-2接下来在服务器上操作-配置免密登录" class="header-anchor">#</a> 2.2接下来在服务器上操作，配置免密登录</h4> <p>生产密钥对: ssh-keygen -t rsa，配置让gitlab服务器和前端代码服务器之间可以免密登录具体免密登录操作如下：
+登录服务器，cd .ssh 执行 ssh-keygen -t rsa命令，会生成id_rsa（秘钥）和id_rsa.pub（公钥）两个文件</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> .ssh
+ssh-keygen <span class="token parameter variable">-t</span> rsa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf0070a64b74~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></p> <p>将公钥id_rsa.pub中的内容copy到authorized_keys中（做免密登录）</p> <h4 id="_2-3服务器上用docker安装gitlab-runner"><a href="#_2-3服务器上用docker安装gitlab-runner" class="header-anchor">#</a> 2.3服务器上用docker安装gitlab-runner</h4> <p>用docker安装gitlab-runner:</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> pull gitlab/gitlab-runner:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>停止并删除现有容器：</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> stop gitlab-runner <span class="token operator">&amp;&amp;</span> <span class="token function">docker</span> <span class="token function">rm</span> gitlab-runner
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建启动容器：</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> gitlab-runner <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span> <span class="token parameter variable">-v</span> /var/run/docker.sock:/var/run/docker.sock <span class="token punctuation">\</span> <span class="token parameter variable">-v</span> /srv/gitlab-runner/config:/etc/gitlab-runner <span class="token punctuation">\</span> gitlab/gitlab-runner:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看日志：</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> logs gitlab-runner
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_2-4服务器上用docker注册gitlab-runner"><a href="#_2-4服务器上用docker注册gitlab-runner" class="header-anchor">#</a> 2.4服务器上用docker注册gitlab-runner</h4> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcfbf827653ce~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="img"> docker注册runner</p> <div class="language-shell script line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">--rm</span> <span class="token parameter variable">-t</span> <span class="token parameter variable">-i</span> <span class="token parameter variable">-v</span> /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>接下来会提示你进行一系列的操作
+1.Please enter the gitlab-ci coordinator URL (e.g. <a href="https://gitlab.com/" target="_blank" rel="noopener noreferrer">https://gitlab.com<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> ) <a href="https://gitlab.com/" target="_blank" rel="noopener noreferrer">https://gitlab.com<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+输入您的GitLab实例URL：（gitlab中的CI/CD中的runner里面有）
+2.Please enter the gitlab-ci token for this runner xxx
+输入您获得的令牌来注册token：（gitlab中的CI/CD中的runner里面有）
+3.Please enter the gitlab-ci description for this runner [hostname] my-runner
+输入Runner的描述，稍后可以在GitLab的UI中进行更改：
+4.Please enter the gitlab-ci tags for this runner (comma separated): my-tag,another-tag
+输入与Runner有关的标签，稍后可以在GitLab的UI中进行更改：
+5.Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, docker, parallels, virtualbox, docker-ssh, shell: docker
+6.输入Runner执行者：
+Please enter the Docker image (eg. ruby:2.1): alpine:latest
+如果您选择Docker作为执行程序，则会要求您为未在以下项目中定义一个的项目使用默认映像：这里就输入alpine:latest就行了</p> <p><strong>到这一步服务器上就配置完成了</strong> <strong>想要看自己的gitlab-runner启动没有，可以输入docker ps -a查看</strong> <strong><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf0074db76d0~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></strong></p> <h3 id="_3-将你所需要发布的项目下新建一个-gitlab-ci-yml文件-让gitlab去执行自动化流程"><a href="#_3-将你所需要发布的项目下新建一个-gitlab-ci-yml文件-让gitlab去执行自动化流程" class="header-anchor">#</a> 3.将你所需要发布的项目下新建一个.gitlab-ci.yml文件，让gitlab去执行自动化流程</h3> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf007679f2ad~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="img"></p> <h4 id="_3-1gitlab-ci-yml文件"><a href="#_3-1gitlab-ci-yml文件" class="header-anchor">#</a> 3.1gitlab-ci.yml文件：</h4> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code>//做缓存的
+<span class="token key atrule">cache</span><span class="token punctuation">:</span>
+  <span class="token key atrule">key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span>CI_PROJECT_NAME<span class="token punctuation">}</span>
+  <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> node_modules/
+//测试
+<span class="token comment"># test_e2e:</span>
+<span class="token comment">#   image: cypress/browsers:chrome67</span>
+<span class="token comment">#   stage: test</span>
+<span class="token comment">#   script:</span>
+<span class="token comment">#     - npm i</span>
+<span class="token comment">#     - npm run test:e2e -- --headless --record --key b2a22185-8eeb-4f0e-9b21-2d61f769d8c7</span>
+<span class="token comment">#   only:</span>
+<span class="token comment">#     - master</span>
+//dev环境构建
+<span class="token key atrule">dev:build</span><span class="token punctuation">:</span>
+  <span class="token key atrule">image</span><span class="token punctuation">:</span> node
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> build
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> yarn
+    <span class="token punctuation">-</span> yarn build<span class="token punctuation">:</span>dev
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> dev
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> eye<span class="token punctuation">-</span>runner
+  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span>
+    <span class="token key atrule">expire_in</span><span class="token punctuation">:</span> 1 week
+    <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> dist //项目打包后的文件夹
+//dev环境发布
+<span class="token key atrule">dev:deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">image</span><span class="token punctuation">:</span> alpine<span class="token punctuation">:</span><span class="token number">3.7</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> echo &quot;http<span class="token punctuation">:</span>//mirrors.aliyun.com/alpine/v3.7/main/&quot; <span class="token punctuation">&gt;</span> /etc/apk/repositories
+    <span class="token punctuation">-</span> apk add <span class="token punctuation">-</span><span class="token punctuation">-</span>no<span class="token punctuation">-</span>cache rsync openssh
+    <span class="token punctuation">-</span> mkdir <span class="token punctuation">-</span>p ~/.ssh
+    <span class="token punctuation">-</span> echo &quot;$SSH_KEY_DEMO_PRIVATE&quot; <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> ~/.ssh/id_rsa
+    <span class="token punctuation">-</span> echo &quot;$SSH_KEY_DEMO_PUB&quot; <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> ~/.ssh/id_rsa.pub
+    <span class="token punctuation">-</span> chmod 600 ~/.ssh/id_rsa
+    <span class="token punctuation">-</span> chmod 600 ~/.ssh/id_rsa.pub
+    <span class="token punctuation">-</span> echo <span class="token punctuation">-</span>e &quot;Host <span class="token important">*\n\t</span> StrictHostKeyChecking no \n\n&quot; <span class="token punctuation">&gt;</span> ~/.ssh/config
+    <span class="token punctuation">-</span> rsync <span class="token punctuation">-</span>rav <span class="token punctuation">-</span><span class="token punctuation">-</span>delete ./dist/ &quot;$SERVER_DEMO_HOST<span class="token punctuation">:</span>$SERVER_DEMO_PATH&quot;//同步打包后的文件夹里的内容到nginx指定的静态资源文件夹
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> dev
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> eye<span class="token punctuation">-</span>runner
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><p>上述为dev环境配置，生产环境同理配置即可</p> <h4 id="_3-2变量说明"><a href="#_3-2变量说明" class="header-anchor">#</a> 3.2变量说明：</h4> <p>SERVER_DEMO_HOST：目标CICD服务器IP地址
+SERVER_DEMO_PATH：服务器上nginx指向的静态资源目录
+SSH_KEY_DEMO_PRIVATE： 服务器私钥
+SSH_KEY_DEMO_PUB：服务器公钥</p> <h4 id="_3-3注意"><a href="#_3-3注意" class="header-anchor">#</a> 3.3注意：</h4> <p>在webpack项目中配置导出的文件名为你需要同步的文件夹的名称，并且访问路径按需为相对路径，或者绝对路径，具体看项目需求。上面的./dist/就是我们项目中的打包后生成的文件夹</p> <p><strong>到此我们就配置完成了，提交代码到指定分支，触发CI/CD</strong></p> <h3 id="_4-打包构建-提交代码-触发钩子执行自动化构建发布"><a href="#_4-打包构建-提交代码-触发钩子执行自动化构建发布" class="header-anchor">#</a> 4.打包构建，提交代码，触发钩子执行自动化构建发布</h3> <h4 id="提交代码触发ci-cd流程"><a href="#提交代码触发ci-cd流程" class="header-anchor">#</a> 提交代码触发CI/CD流程</h4> <p>然后在gitlab项目中的CI/CD流水线中能看到自己的刚刚触发的CI/CD任务，如下图所示</p> <h3 id=""><a href="#" class="header-anchor">#</a> <img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf009e19906e~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></h3> <p>点击状态或者阶段都可以进入构建发布详情页面查看内容
+<img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf00bc62d806~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></p> <h4 id="构建-build"><a href="#构建-build" class="header-anchor">#</a> 构建：build</h4> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf00c633a522~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></p> <h4 id="发布-deploy"><a href="#发布-deploy" class="header-anchor">#</a> 发布：deploy</h4> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/1/19/16fbcf00d45c09e8~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp" alt="image.png"></p> <p>至此，大功告成，妈妈再也不用担心我发布线上代码耗费时间和出错了</p> <h2 id="自动化构建发布-ci-cd-的优势"><a href="#自动化构建发布-ci-cd-的优势" class="header-anchor">#</a> 自动化构建发布（CI/CD）的优势</h2> <p>项目建立仅需配置一次，即可实现自动化部署，docker环境与宿主环境不会发生环境上的冲突，gitlab控制权限，发布过程更为安全，添加自动化测试，项目上线更为省心。</p> <h2 id="写在最后"><a href="#写在最后" class="header-anchor">#</a> 写在最后</h2> <p>之前部署前端服务，修改完某个东西之后都要手动打包上传部署，很难受，而且容易出错，自从尝试了自动化部署之后就深深的爱上了，CI/CD是真香，用了都说好。
+自己也是爬坑怕了很久，总结出来的这一套，希望能给大家带来一些帮助，文档中有啥地方写的不对的地方，欢迎指正，谢谢~</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/9/27 上午10:46:05</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:2;" data-v-248d85d6></canvas></div><!----><div class="RibbonAnimation"></div><div id="goTop" class="hide-cat" data-v-bf92849a></div><div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/blog/assets/js/app.d8bd66ab.js" defer></script><script src="/blog/assets/js/3.3b42f3e9.js" defer></script><script src="/blog/assets/js/1.9c7ae58f.js" defer></script><script src="/blog/assets/js/132.c119b50c.js" defer></script>
+  </body>
+</html>
