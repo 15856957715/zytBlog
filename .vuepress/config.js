@@ -13,7 +13,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "./public/favicon.ico"
+        "href": "https://hfxiang93.github.io/blog/favicon.ico"
       }
     ],
     [
