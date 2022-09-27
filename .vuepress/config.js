@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         "text": "GitHub",
-        "link": "https://github.com/15856957715/zytBlog",
+        "link": "https://github.com/hfxiang93",
         "icon": "reco-github"
       }
     ],
@@ -230,9 +230,9 @@ module.exports = {
     [
       "dynamic-title",
       {
-        showIcon: "./public/favicon.ico",
+        showIcon: "https://hfxiang93.github.io/blog/favicon.ico",
         showText: "欢迎回来",
-        hideIcon: "./public/favicon.ico",
+        hideIcon: "https://hfxiang93.github.io/blog/favicon.ico",
         hideText: "休息一会",
         recoverTime: 2000
       }
