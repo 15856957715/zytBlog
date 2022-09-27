@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "最美不过青衫白发",
+  "title": "宇童笔记",
   "description": "",
   "dest": "public",
   "base": "/blog/",
@@ -13,7 +13,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "https://hfxiang93.github.io/blog/favicon.ico"
+        "href": "./public/favicon.ico"
       }
     ],
     [
@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         "text": "GitHub",
-        "link": "https://github.com/hfxiang93",
+        "link": "https://github.com/15856957715/zytBlog",
         "icon": "reco-github"
       }
     ],
@@ -230,9 +230,9 @@ module.exports = {
     [
       "dynamic-title",
       {
-        showIcon: "https://hfxiang93.github.io/blog/favicon.ico",
+        showIcon: "./public/favicon.ico",
         showText: "欢迎回来",
-        hideIcon: "https://hfxiang93.github.io/blog/favicon.ico",
+        hideIcon: "./public/favicon.ico",
         hideText: "休息一会",
         recoverTime: 2000
       }
